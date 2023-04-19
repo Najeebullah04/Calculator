@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    font-size: 60px;
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    text-align: center;
+    background-image: linear-gradient(to right, black , red , green);
+    animation-name: animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes  animation {
+    0%{color: black;}
+    50%{color:white;}
+    100%{color:green;}
+}
+.navbar{
+background-color: rgb(100, 243, 95);
+display: flex;
+position: sticky;
+top:0px;
+margin: 2px;
+width: 100%;
+height: auto;
+}
+.ul{
+    margin: 2px 0px 0px 0px ;
+    float: left;
+}
+li  { 
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+}
+#search[placeholder="search..."]{
+    padding-left:30px ;
+}
+#search{
+    margin: 2px;
+    padding: 10px;
+    width: 500px;
+    position:relative;
+    display: inline-block;
+    background-image: url(./pics/search.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: left;
+    background-position-x: 5px;
+}
+.ul li a {
+    list-style-type: none;
+    text-decoration: none;
+}
+.ul li:hover{
+    background-color: rgb(71, 226, 66);
+}
+.container{
+    display: flex;
+    height: auto;
+}
+@media screen and(max-width:300px) {
+    .container{
+       display:block;
+    }
+}
+.middle{
+width: 70%;
+display: flex;
+justify-content: center;
+margin-top: 50px;
+margin-bottom: 150px;
+
+}
+@media screen and (max-width:500px){
+   .middle{
+    flex-direction: row;
+   }
+}
+.middle0{
+    display: block;
+    width: 400px;
+    background-color: rgb(86, 86, 86);    
+    border-radius: 15px;
+    box-shadow: 30px 30px 20px gray;
+}
+.middle1{
+    margin-bottom: 10px;
+}
+input[type="text"]{
+    height: 70px;
+    width: 380px;
+    border-radius:15px;
+    font-size: 50px;
+}
+.screen{
+    margin: 15px 5px 15px 5px;
+    padding: 5px;
+    display: block;
+    border-radius: 25px;
+    text-align:right;
+    direction: rtl;
+    box-shadow: 0px 5px 5px black;
+}
+#operator{
+    padding: 15px 25px;
+}
+  
+.buttons{
+    padding: 15px 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 17px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px  rgb(158, 158, 158);
+    cursor: pointer;
+    font-size: 40px;
+}
+.buttons:hover{
+    box-shadow: 0px 5px 5px rgb(0, 0, 0);
+    margin-top: 5px;
+}
+.side{
+    width: 15%;
+}
+.footer{
+    text-align: center;
+    width: 100%;
+    background-color: gray;
+}
+
+
