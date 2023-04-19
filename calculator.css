@@ -1,6 +1,8 @@
 *{
     box-sizing: border-box;
+
 }
+
 .header{
     width: 100%;
     font-size: 60px;
@@ -61,6 +63,9 @@ li  {
 .container{
     display: flex;
     height: auto;
+    
+    background-image:linear-gradient(to bottom right , rgb(105, 103, 103) , rgb(176, 173, 173) , white );
+    
 }
 @media screen and(max-width:300px) {
     .container{
@@ -85,7 +90,7 @@ margin-bottom: 150px;
     width: 400px;
     background-color: rgb(86, 86, 86);    
     border-radius: 15px;
-    box-shadow: 30px 30px 20px gray;
+    box-shadow: 30px 30px 20px rgb(124, 122, 122);
 }
 .middle1{
     margin-bottom: 10px;
@@ -129,7 +134,7 @@ input[type="text"]{
 .footer{
     text-align: center;
     width: 100%;
-    background-color: gray;
+    background-color: rgb(81, 148, 98);
 }
 
 
