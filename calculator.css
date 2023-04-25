@@ -25,7 +25,7 @@ background-color: rgb(100, 243, 95);
 display: flex;
 position: sticky;
 top:0px;
-margin: 2px;
+margin: 1px;
 width: 100%;
 height: auto;
 }
@@ -100,14 +100,13 @@ input[type="text"]{
     width: 380px;
     border-radius:15px;
     font-size: 50px;
+   text-align: right;
 }
 .screen{
     margin: 15px 5px 15px 5px;
     padding: 5px;
     display: block;
     border-radius: 25px;
-    text-align:right;
-    direction: rtl;
     box-shadow: 0px 5px 5px black;
 }
 #operator{
@@ -127,6 +126,10 @@ input[type="text"]{
 .buttons:hover{
     box-shadow: 0px 5px 5px rgb(0, 0, 0);
     margin-top: 5px;
+}
+#equalSign{
+    padding: 15px 170px;
+    
 }
 .side{
     width: 15%;
