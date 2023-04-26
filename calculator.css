@@ -125,10 +125,9 @@ input[type="text"]{
 }
 .buttons:hover{
     box-shadow: 0px 5px 5px rgb(0, 0, 0);
-    margin-top: 5px;
 }
 #equalSign{
-    padding: 15px 170px;
+    padding: 15px 168px;
     
 }
 .side{
