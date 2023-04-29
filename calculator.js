@@ -1,13 +1,18 @@
-var textInput = "";
+let input ="";
 function operation(value){
-textInput +=value;
-document.getElementById("screen").value= textInput;
+    input +=value;
+    document.getElementById("screen").value=input;
 }
 function equal(){
-    var result = eval(textInput);
-    document.getElementById("screen").value= result;
+    input = eval(input);
+    document.getElementById("screen").value =input;
 }
 function clearInput(){
-    textInput="";
-    document.getElementById("screen").value= textInput;
+    input="";
+    document.getElementById("screen").value=input;
+}
+function deleteInput(){
+ input = input.slice(0,-1);
+document.getElementById("screen").value= input;
+
 }
