@@ -27,7 +27,7 @@
         <div class="middle">
             <div class="middle0">
                 <div class="middle1">
-                <div  class="screen"><input id="screen" type="text" ></div>           
+                <div  class="screen"><input id="screen"  type="text" readonly></div>           
                 <button class="buttons" onclick="operation('7')"><b>7</b></button>              
                 <button class="buttons"  onclick="operation('8')"><b>8</b></button>              
                 <button class="buttons"  onclick="operation('9')"><b>9</b></button>               
@@ -44,8 +44,11 @@
                 <button class="buttons" onclick="operation('.')"style="padding: 15px 30px;"><b>&#46;</b></button> 
                 <button class="buttons" onclick="clearInput()"><b>c</b></button>                
                 <button class="buttons o" onclick="operation('/')" style=" padding: 15px 31px;"><b>/</b></button>
-                <button class="buttons o" id="equal" onclick="equal()"><b>=</b></button>
-                <button class="buttons o" id="delete" onclick="deleteInput()"><b>del</b></button>                                                   
+                <button class="buttons o" id="bin" onclick="bin2dec()"  style=" padding: 15px 20px;"><b>dec</b></button>
+                <button class="buttons o" id="dec" onclick="dec2bin()"  style=" padding: 15px 20px;"><b>bin</b></button>
+                <button class="buttons o" id="delete" onclick="deleteInput() "  style=" padding: 15px 20px;"><b>del</b></button> 
+                <button class="buttons o" id="equal" onclick="equal()"  style=" padding: 15px 165px;"><b>=</b></button>
+                                                  
             </div>             
             </div>
         </div>       
