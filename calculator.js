@@ -30,37 +30,20 @@ else if(key=='Backspace'){
 }
 else if(key=='Delete'){
     clearInput();
+}})
+
+function bin2dec(){
+   
+    input = document.getElementById("screen").value;
+   const result = parseInt(input,2).toString(10);
+   
+   
+    document.getElementById("screen").value = result;
+      
+ // return parseInt(bin,2).toString(10);
 }
-
+function dec2bin(){
+    input = document.getElementById("screen").value;
+    document.getElementById("screen").value= (input>>>0).toString(2);
+ // return (dec>>>0).toString(2);
 }
-)
-
-// chat gpt:
-// <input type="text" id="calculator-screen" readonly>
-
-// // Get the calculator screen element
-// const calculatorScreen = document.getElementById("calculator-screen");
-
-// // Set up event listeners for keyboard inputs
-// document.addEventListener("keydown", function(event) {
-//   // Get the pressed key
-//   const key = event.key;
-  
-//   // Check if the key is a number or operator
-//   if (/[0-9]/.test(key) || /[\+\-\*\/]/.test(key)) {
-//     // Add the pressed key to the calculator screen
-//     calculatorScreen.value += key;
-//   }
-//   // Check if the key is the equals sign
-//   else if (key === "=" || key === "Enter") {
-//     // Evaluate the expression on the calculator screen
-//     const result = eval(calculatorScreen.value);
-//     // Display the result on the calculator screen
-//     calculatorScreen.value = result;
-//   }
-//   // Check if the key is the clear button
-//   else if (key === "c" || key === "C") {
-//     // Clear the calculator screen
-//     calculatorScreen.value = "";
-//   }
-// });
