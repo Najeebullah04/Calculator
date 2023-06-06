@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="calculator.css">
     <title>CalculatoR</title>
     <script src="https://kit.fontawesome.com/f96f2915a6.js" crossorigin="anonymous"></script>
-    <script src="calculator.js">
-    </script>
+    <script src="calculator.js"> </script>
 </head>
 <body>
     <h1 class="header">CalculatoR</h1>
@@ -26,30 +25,45 @@
         <div class="side"></div>
         <div class="middle">
             <div class="middle0">
-                <div class="middle1">
-                <div  class="screen"><input id="screen"  type="text" readonly></div>           
-                <button class="buttons" onclick="operation('7')"><b>7</b></button>              
-                <button class="buttons"  onclick="operation('8')"><b>8</b></button>              
-                <button class="buttons"  onclick="operation('9')"><b>9</b></button>               
-                <button class="buttons" onclick="operation('+')"  onclick="" style=" padding: 15px 25px;"><b>+</b></button> 
-                <button class="buttons" onclick="operation('4')" ><b>4</b></button>              
-                <button class="buttons" onclick="operation('5')"><b>5</b></button>              
-                <button class="buttons" onclick="operation('6')"><b>6</b></button>  
-                <button class="buttons o" onclick="operation('-')"  style=" padding: 15px 30px;"><b>-</b></button>            
-                <button class="buttons" onclick="operation('1')"><b>1</b></button>              
-                <button class="buttons" onclick="operation('2')"><b>2</b></button>              
-                <button class="buttons" onclick="operation('3')"><b>3</b></button>              
-                <button class="buttons o" onclick="operation('*')" style=" padding: 15px 25px;"><b>x</b></button>
-                <button class="buttons" onclick="operation('0')"><b>0</b></button>              
-                <button class="buttons" onclick="operation('.')"style="padding: 15px 30px;"><b>&#46;</b></button> 
-                <button class="buttons" onclick="clearInput()"><b>c</b></button>                
-                <button class="buttons o" onclick="operation('/')" style=" padding: 15px 31px;"><b>/</b></button>
-                <button class="buttons o" id="bin" onclick="bin2dec()"  style=" padding: 15px 20px;"><b>dec</b></button>
-                <button class="buttons o" id="dec" onclick="dec2bin()"  style=" padding: 15px 20px;"><b>bin</b></button>
-                <button class="buttons o" id="delete" onclick="deleteInput() "  style=" padding: 15px 20px;"><b>del</b></button> 
-                <button class="buttons o" id="equal" onclick="equal()"  style=" padding: 15px 165px;"><b>=</b></button>
-                                                  
-            </div>             
+                <div  class="screen"><input id="screen"  type="text" readonly></div>  
+                 <div class="btn-group" id="left">
+                    <button class="buttonL" onclick="sin()"><b>sin</b></button> 
+                    <button class="buttonL" onclick="operation('7')"><b>ln</b></button> 
+                    <button class="buttonL" onclick="operation('7')"><b>x <sup>2</sup></b></button> 
+                    <button class="buttonL" onclick="operation('7')"><b>cos</b></button> 
+                    <button class="buttonL" onclick="operation('7')"><b>log</b></button> 
+                    <button class="buttonL" onclick="operation('7')"><b>PI</b></button> 
+                    <button class="buttonL" onclick="operation('7')"><b>tan</b></button> 
+                    <button class="buttonL" onclick="operation('7')"><b>e</b></button> 
+                    <button class="buttonL" onclick="operation('7')"><i class="fa-solid fa-square-root-variable"></i></button>
+                    <button class="buttonL" onclick="dec2bin()"><b>bin</b></button> 
+                    <button class="buttonL" onclick="bin2dec()"><b>dec</b></button>
+                    <button class="buttonL" onclick="clearInput()"><i class="fa-solid fa-c"></i></button>  
+                 </div>       
+                 <div class="btn-group" id="center">
+                  <button class="buttonC" onclick="operation('(')"><b>(</b></button>
+                  <button class="buttonC" onclick="operation(')')"><b>)</b></button>
+                  <button class="buttonC" onclick="operation('%')"><b>%</b></button>
+                  <button class="buttonC" onclick="operation('7')"><b>7</b></button>
+                  <button class="buttonC" onclick="operation('8')"><b>8</b></button>
+                  <button class="buttonC" onclick="operation('9')"><b>9</b></button>
+                  <button class="buttonC" onclick="operation('4')"><b>4</b></button>
+                  <button class="buttonC" onclick="operation('5')"><b>5</b></button>
+                  <button class="buttonC" onclick="operation('6')"><b>6</b></button>
+                  <button class="buttonC" onclick="operation('1')"><b>1</b></button>
+                  <button class="buttonC" onclick="operation('2')"><b>2</b></button>
+                  <button class="buttonC" onclick="operation('3')"><b>3</b></button>
+                  <button class="buttonC" onclick="operation('0')"><b>0</b></button>
+                  <button class="buttonC" onclick="operation('.')"><b>.</b></button>
+                  <button class="buttonC" onclick="equal()"><b>=</b></button>
+                 </div>       
+                 <div class="btn-group" id="right">
+                    <button class="buttonC" onclick="deleteInput()"><i class="fa-solid fa-delete-left"></i></button>
+                  <button class="buttonR" onclick="operation('+')"><i class="fa-solid fa-plus"></i></button>
+                  <button class="buttonR" onclick="operation('-')"><i class="fa-solid fa-minus"></i></button>
+                  <button class="buttonR" onclick="operation('*')"><i class="fa-solid fa-xmark"></i></button>
+                  <button class="buttonR" onclick="operation('/')"><i class="fa-solid fa-divide"></i></button>
+                 </div>                     
             </div>
         </div>       
         <div class="side"></div>
