@@ -27,7 +27,13 @@
             <div class="middle0">
                 <div  class="screen"><input id="screen"  type="text" readonly></div>  
                  <div class="btn-group" id="left">
-                    <button class="buttonL" onclick="sin()"><b>sin</b></button> 
+                    <form action="" style="color: white ;">
+                     <input  type="radio" id="rad" name="degree" value="Rad">
+                     <label  for="rad">Rad</label>
+                     <input  type="radio" id="deg" name="degree" value="Deg">
+                     <label  for="deg">Deg</label>
+                    </form>                     
+                    <button class="buttonL" onclick="sin('sin')"><b>sin</b></button> 
                     <button class="buttonL" onclick="operation('7')"><b>ln</b></button> 
                     <button class="buttonL" onclick="operation('7')"><b>x <sup>2</sup></b></button> 
                     <button class="buttonL" onclick="operation('7')"><b>cos</b></button> 
