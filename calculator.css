@@ -87,7 +87,7 @@ margin-bottom: 150px;
 }
 .middle0{
     display: block;
-    width: 400px;
+    width: 950px;
     background-color: rgb(86, 86, 86);    
     border-radius: 15px;
     box-shadow: 30px 30px 20px rgb(124, 122, 122);
@@ -109,30 +109,6 @@ input[type="text"]{
     border-radius: 25px;
     box-shadow: 0px 5px 5px black;
 }
-#operator{
-    padding: 15px 25px;
-}
-  
-.buttons{
-    padding: 15px 25px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 17px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 5px  rgb(158, 158, 158);
-    cursor: pointer;
-    font-size: 40px;
-}
-.buttons:hover{
-    box-shadow: 0px 5px px rgb(0, 0, 0);
-}
-#equal{
-    padding: 15px 72px;
-    
-}
-#delete{
-    padding: 15px 56px; 
-}
 .side{
     width: 15%;
 }
@@ -140,6 +116,63 @@ input[type="text"]{
     text-align: center;
     width: 100%;
     background-color: rgb(81, 148, 98);
+}
+#left{
+    border: 1px solid black;
+    width: 400px;
+    justify-content: center;
+    justify-items: center;
+    float: left;
+}
+.btn-group .buttonL{
+    padding: 5px 40px;
+    margin: 5px;
+     border-radius: 10px;
+     box-shadow: 0px 5px 5px  rgb(158, 158, 158);
+     cursor: pointer;
+     font-size: 20px; 
+     width: 120px;
+}
+#center{
+    border: 1px solid black;
+    justify-content: center;
+    justify-items: center;
+    float: left;
+    width: 400px;
+}
+.btn-group .buttonC{
+    padding: 5px 40px;
+    margin: 5px;
+     border-radius: 10px;
+     box-shadow: 0px 5px 5px  rgb(158, 158, 158);
+     cursor: pointer;
+     width: 120px;
+     font-size: 20px; 
+}
+#right{
+    border: 1px solid black;
+    width: 130px;
+    justify-content: center;
+    float: left;    
+}
+.btn-group .buttonR{
+    padding: 5px 40px;
+    margin: 5px;
+    border-radius: 10px;
+    width: 120px;
+    box-shadow: 0px 5px 5px  rgb(158, 158, 158);
+    cursor: pointer;
+    font-size: 20px; 
+}
+.buttonL{
+    padding: 5px 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px  rgb(158, 158, 158);
+    cursor: pointer;
+    font-size: 40px; 
 }
 
 
